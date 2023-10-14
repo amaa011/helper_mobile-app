@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">food ordring</string>
+    <string name="search_hint" />
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">close Navigation</string>
+
+</resources>

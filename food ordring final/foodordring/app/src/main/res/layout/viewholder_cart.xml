@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/titlecard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/TitleTxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textColor="#373b54"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titlecard"
+        app:layout_constraintTop_toTopOf="@+id/titlecard"
+        tools:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/minusCartbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titlecard"
+        app:layout_constraintStart_toStartOf="@+id/TitleTxtt"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/numberitemtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textColor="#373b54"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartbtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCartbtn"
+        app:layout_constraintTop_toTopOf="@+id/minusCartbtn" />
+
+    <ImageView
+        android:id="@+id/pluscardbtbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartbtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCartbtn"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/feeEachhit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TitleTxtt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TitleTxtt" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="$"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/feeEachhit"
+        app:layout_constraintEnd_toStartOf="@+id/feeEachhit" />
+
+    <TextView
+        android:id="@+id/totaleachhit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pluscardbtbn"
+        app:layout_constraintEnd_toEndOf="@+id/feeEachhit"
+        app:layout_constraintTop_toTopOf="@+id/pluscardbtbn" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="$"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totaleachhit"
+        app:layout_constraintEnd_toStartOf="@+id/totaleachhit"
+        tools:textColor="#ff3d00" />
+</androidx.constraintlayout.widget.ConstraintLayout>
